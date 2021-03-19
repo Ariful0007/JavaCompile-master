@@ -1,0 +1,44 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:icon="@drawable/ic_editor"
+        android:key="editor_row"
+        android:summaryOff="Hide the line number"
+        android:summaryOn="Displays the line number"
+        android:title="The codemer line number" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:icon="@drawable/ic_editor"
+        android:key="editor_auto_compete"
+        android:summaryOff="Shut down"
+        android:summaryOn="Open it"
+        android:title="A small fourteies" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:icon="@drawable/ic_editor"
+        android:key="editor_dark_mode"
+        android:summaryOff="Shut down"
+        android:summaryOn="Open it"
+        android:title="Dark mode" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:icon="@drawable/ic_editor"
+        android:key="editor_auto_save"
+        android:summaryOff="Shut down"
+        android:summaryOn="Open"
+        android:title="Save automatically on exit" />
+
+    <ListPreference
+        android:defaultValue="2"
+        android:dialogTitle="A little fourteies"
+        android:entries="@array/indent_entries"
+        android:entryValues="@array/indent_values"
+        android:icon="@drawable/ic_editor"
+        android:key="formatter"
+        android:summary="Set a small dot(2 or 4)"
+        android:title="A little fourteies" />
+
+</PreferenceScreen>

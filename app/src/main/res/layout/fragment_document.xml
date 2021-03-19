@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout style="@style/App.DefaultBarLayout">
+
+        <androidx.appcompat.widget.Toolbar
+            style="@style/App.DefaultToolbar"
+            app:title="And we can say, You don't have one." />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="JavaApi Search (Java SE8 Bangladeshi)"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/keyWordView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.7"
+                        android:background="@color/transparent"
+                        android:hint="Please enter the Java class name"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/jar_search"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/jarSearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.7"
+                        android:background="?selectableItemBackground"
+                        android:lineSpacingExtra="5dp"
+                        android:padding="10dp"
+                        android:text="@string/jar_search_tip"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Java The sample source code"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/sampleLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.7"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:lineSpacingExtra="5dp"
+                        android:padding="10dp"
+                        android:text="The author collects java source code samples from the network for beginners and can import the running viewing effect directly。"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/adCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/ad_layout"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="@dimen/main_title"
+                        android:textStyle="bold" />
+
+                    <FrameLayout
+                        android:id="@+id/adContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Java Reptile tutorial"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/jsoupLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.7"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:lineSpacingExtra="5dp"
+                        android:padding="10dp"
+                        android:text="The price list mainly describes Java's open source reptile framework Jsoup'n attention including simulated login, extraction of web page specified content, probe request header, access to verification code and other operations"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

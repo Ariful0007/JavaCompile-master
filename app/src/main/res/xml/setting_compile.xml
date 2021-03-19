@@ -1,0 +1,68 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:defaultValue="args"
+        android:dialogTitle="Set the main ( ) method from"
+        android:icon="@drawable/ic_console"
+        android:key="run_args"
+        android:summary="Set the score for starting main ( ), separated by a space"
+        android:title="main ( ) starts from" />
+
+    <EditTextPreference
+        android:defaultValue="/data/data/com.xiaoyv.java/files/lib/rt.jar"
+        android:dialogTitle="CLASSPATH"
+        android:icon="@drawable/ic_console"
+        android:key="rt_path"
+        android:summary="Set the jre path (rt .jar) and make sure that the settings are correct or the letter path will be loaded"
+        android:title="CLASSPATH" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:icon="@drawable/ic_console"
+        android:key="compile_auto_run"
+        android:summaryOff="Shut down"
+        android:summaryOn="Open it"
+        android:title="The log is automatically turned off and running" />
+
+    <ListPreference
+        android:defaultValue="UTF-8"
+        android:dialogTitle="Pair coding"
+        android:entries="@array/compile_encoding_entries"
+        android:entryValues="@array/compile_encoding_values"
+        android:icon="@drawable/ic_console"
+        android:key="compile_encoding"
+        android:summary="Set encoding (utf-8 or gbk)"
+        android:title="Pair coding" />
+
+
+    <ListPreference
+        android:defaultValue="1.6"
+        android:dialogTitle="The source version"
+        android:entries="@array/jdk_entries"
+        android:entryValues="@array/jdk_values"
+        android:icon="@drawable/ic_console"
+        android:key="compile_source"
+        android:summary="Set source version (1.1 to 1.8)"
+        android:title="The source version" />
+
+    <ListPreference
+        android:defaultValue="1.6"
+        android:dialogTitle="The target version for the application"
+        android:entries="@array/jdk_entries"
+        android:entryValues="@array/jdk_values"
+        android:icon="@drawable/ic_console"
+        android:key="compile_target"
+        android:summary="Set a target version (1.1 to 1.8)"
+        android:title="The target application version" />
+
+    <ListPreference
+        android:defaultValue="https://jcenter.bintray.com"
+        android:dialogTitle="Maven ss download address"
+        android:entries="@array/maven_entries"
+        android:entryValues="@array/maven_values"
+        android:icon="@drawable/ic_console"
+        android:key="maven"
+        android:summary="Set the pull address of the jar file"
+        android:title="Maven ss download address" />
+
+</PreferenceScreen>

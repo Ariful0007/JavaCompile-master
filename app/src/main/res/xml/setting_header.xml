@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:fragment="com.xiaoyv.java.ui.activity.SettingsActivity$SettingEditorFragment"
+        android:icon="@drawable/ic_editor"
+        android:key="setting_editor"
+        android:summary="Line numbers, colors, themes, and so on"
+        android:title="@string/setting_editor" />
+
+    <Preference
+        android:fragment="com.xiaoyv.java.ui.activity.SettingsActivity$SettingCompileFragment"
+        android:icon="@drawable/ic_console"
+        android:key="setting_compile"
+        android:summary="Java compilation, compilation, path, version, and so on"
+        android:title="@string/setting_compile" />
+
+    <Preference
+        android:icon="@drawable/ic_restore"
+        android:key="setting_restore"
+        android:summary="Recovery (1)"
+        android:title="@string/setting_default" />
+
+    <Preference
+        android:fragment="com.xiaoyv.java.ui.activity.SettingsActivity$SettingAboutFragment"
+        android:icon="@drawable/ic_info"
+        android:key="setting_restore"
+        android:summary="Author and software-related information"
+        android:title="@string/setting_about" />
+</PreferenceScreen>
